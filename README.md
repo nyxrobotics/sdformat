@@ -21,7 +21,9 @@ steps:
  - mkdir build/
  - cd build/
  - cmake ..
- - sudo make install
+ - sudo dpkg -r libsdformat6-dev libsdformat6 sdformat-sdf
+ - sudo checkinstall -y -D --pkgname=sdformat-roki --pkgversion=6.2.0
+
 
 sdformat supported cmake parameters at configuring time:
  - USE_INTERNAL_URDF (bool) [default False]
