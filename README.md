@@ -37,4 +37,4 @@ sdformat supported cmake parameters at configuring time:
 
 To uninstall the software installed with the previous steps:
  - cd build/
- - sudo make uninstall
+ - sudo dpkg -r sdformat-roki
